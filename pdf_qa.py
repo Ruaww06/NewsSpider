@@ -5,16 +5,13 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.chains import ConversationalRetrievalChain
 from langchain_chroma import Chroma
 from langchain.memory import ConversationBufferMemory
-
-# 导入配置
 import sys
-import os
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 try:
     from config import Config
 except ImportError:
-    # 如果配置文件不存在，使用默认配置
     class Config:
         PDF_FILE_PATH = "./News.pdf"
         GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -55,7 +52,7 @@ def get_response(memory, question):
         llm = model,
         retriever = retriever,
         memory = memory,
-        # 可选：如果你想在后台看到它到底引用了哪一段，可以加上 return_source_documents=True
+        # 可选：如果想在后台看到它到底引用了哪一段，可以加上 return_source_documents=True
         #return_source_documents=True 
     )
     
