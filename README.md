@@ -115,7 +115,7 @@ OPENAI_BASE_URL = "https://api.deepseek.com"
 LLM_MODEL_NAME = "deepseek-chat"
 
 # 嵌入模型名称 (例如: text-embedding-3-small)
-# 注意：如果厂商不提供 Embedding 服务，需使用第三方或本地模型
+# 注意：如果厂商不提供 Embedding 服务，需使用第三方或本地模型(如OLLAMA平台)
 EMBEDDING_MODEL_NAME = "text-embedding-3-small"
 
 # --- 目标网站配置 (保持不变) ---
