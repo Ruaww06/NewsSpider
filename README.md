@@ -62,11 +62,11 @@ TARGET_PAGE_URL = "复制学校公文通页面的网址"
 # 但我建议还是仔细看看需要的配置文件，默认可能会报错
 ```
 
-### 获取 DeepSeek API 密钥
+### 获取 GEMINI API 密钥
 
-1. 访问 [DeepSeek官网](https://platform.deepseek.com/)
+1. 访问 [GEMINI官网](https://gemini.google.com/app?hl=zh-cn)
 2. 注册账号并获取API密钥
-3. 在配置文件中设置 `DEEPSEEK_API_KEY`
+3. 在配置文件中设置 `GOOGLE_API_KEY`
 
 ## 使用方法
 
